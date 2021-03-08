@@ -48,7 +48,66 @@ public class AmazonStepDefinitions {
 		  if (textDisplayed){
 			  System.out.println("Text displayed");
 		  }
-		  
+		
+    {
+      List<WebElement> elements = driver.findElements(By.linkText("Best Sellers"));
+      assert(elements.size() > 0);
+    }
+    
+    {
+      List<WebElement> elements = driver.findElements(By.linkText("Today\'s Deals"));
+      assert(elements.size() > 0);
+    }
+    
+    {
+      List<WebElement> elements = driver.findElements(By.cssSelector("#nav-link-prime > span:nth-child(1)"));
+      assert(elements.size() > 0);
+    }
+    
+    {
+      List<WebElement> elements = driver.findElements(By.linkText("Customer Service"));
+      assert(elements.size() > 0);
+    }
+    
+    {
+      List<WebElement> elements = driver.findElements(By.linkText("New Releases"));
+      assert(elements.size() > 0);
+    }
+    
+    {
+      List<WebElement> elements = driver.findElements(By.linkText("Books"));
+      assert(elements.size() > 0);
+    }
+    
+    {
+      List<WebElement> elements = driver.findElements(By.linkText("Fashion"));
+      assert(elements.size() > 0);
+    }
+    
+    {
+      List<WebElement> elements = driver.findElements(By.linkText("Kindle Books"));
+      assert(elements.size() > 0);
+    }
+    
+    {
+      List<WebElement> elements = driver.findElements(By.linkText("Gift Cards"));
+      assert(elements.size() > 0);
+    }
+    
+    {
+      List<WebElement> elements = driver.findElements(By.linkText("Find a Gift"));
+      assert(elements.size() > 0);
+    }
+    
+    {
+      List<WebElement> elements = driver.findElements(By.linkText("Toys & Games"));
+      assert(elements.size() > 0);
+    }
+    
+    {
+      List<WebElement> elements = driver.findElements(By.id("swm-link"));
+      assert(elements.size() > 0);
+    }
 			 
 	  }
 
